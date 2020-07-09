@@ -52,9 +52,9 @@ class _AnasayfaState extends State<Anasayfa> {
                   ? ListView.builder(
                       padding: EdgeInsets.all(15),
                       shrinkWrap: true,
-                      itemCount: kisiler?.length ?? 0,
+                      itemCount: kisiler.length,
                       itemBuilder: (BuildContext context, index) {
-                        Contact telefon = kisiler?.elementAt(index);
+                        Contact telefon = kisiler[index];
                         return ListTile(
                           title: Text(telefon.displayName),
                           trailing: Icon(Icons.keyboard_tab),
